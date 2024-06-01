@@ -1,0 +1,15 @@
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\bin\Debug\net8.0\dia1.exe
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\bin\Debug\net8.0\dia1.deps.json
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\bin\Debug\net8.0\dia1.runtimeconfig.json
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\bin\Debug\net8.0\dia1.dll
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\bin\Debug\net8.0\dia1.pdb
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\dia1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\dia1.AssemblyInfoInputs.cache
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\dia1.AssemblyInfo.cs
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\dia1.csproj.CoreCompileInputs.cache
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\dia1.sourcelink.json
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\dia1.dll
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\refint\dia1.dll
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\dia1.pdb
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\dia1.genruntimeconfig.cache
+C:\Users\cesar\Documents\BOOTCAMP_CSHARPG2\semana01\dia1\obj\Debug\net8.0\ref\dia1.dll
