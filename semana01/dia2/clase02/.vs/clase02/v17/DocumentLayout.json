@@ -3,8 +3,10 @@
   "WorkspaceRootPath": "D:\\CODIGO.EDU.PE\\BOOTCAMP C#\\REPOSITORIO\\BOOTCAMP_CSHARPG2\\semana01\\dia2\\clase02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70AEE77B-90B6-48DF-820B-952A862DE02B}|clase02.csproj|d:\\codigo.edu.pe\\bootcamp c#\\repositorio\\bootcamp_csharpg2\\semana01\\dia2\\clase02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70AEE77B-90B6-48DF-820B-952A862DE02B}|clase02.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35DB8761-C38B-49D3-8C32-D52DBB992C36}|..\\matematicas\\matematicas.csproj|d:\\codigo.edu.pe\\bootcamp c#\\repositorio\\bootcamp_csharpg2\\semana01\\dia2\\matematicas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDEC1CE6-185B-4A57-8A64-5D1A7A84283C}|..\\bucles\\bucles.csproj|d:\\codigo.edu.pe\\bootcamp c#\\repositorio\\bootcamp_csharpg2\\semana01\\dia2\\bucles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +22,26 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\CODIGO.EDU.PE\\BOOTCAMP C#\\REPOSITORIO\\BOOTCAMP_CSHARPG2\\semana01\\dia2\\clase02\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\CODIGO.EDU.PE\\BOOTCAMP C#\\REPOSITORIO\\BOOTCAMP_CSHARPG2\\semana01\\dia2\\clase02\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAABBAAAA",
+              "DocumentMoniker": "D:\\CODIGO.EDU.PE\\BOOTCAMP C#\\REPOSITORIO\\BOOTCAMP_CSHARPG2\\semana01\\dia2\\matematicas\\Program.cs",
+              "RelativeDocumentMoniker": "..\\matematicas\\Program.cs",
+              "ToolTip": "D:\\CODIGO.EDU.PE\\BOOTCAMP C#\\REPOSITORIO\\BOOTCAMP_CSHARPG2\\semana01\\dia2\\matematicas\\Program.cs*",
+              "RelativeToolTip": "..\\matematicas\\Program.cs*",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAuwEUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T01:29:05.455Z",
+              "WhenOpened": "2024-06-04T03:49:36.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CODIGO.EDU.PE\\BOOTCAMP C#\\REPOSITORIO\\BOOTCAMP_CSHARPG2\\semana01\\dia2\\bucles\\Program.cs",
+              "RelativeDocumentMoniker": "..\\bucles\\Program.cs",
+              "ToolTip": "D:\\CODIGO.EDU.PE\\BOOTCAMP C#\\REPOSITORIO\\BOOTCAMP_CSHARPG2\\semana01\\dia2\\bucles\\Program.cs",
+              "RelativeToolTip": "..\\bucles\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T03:36:52.908Z",
               "EditorCaption": ""
             }
           ]

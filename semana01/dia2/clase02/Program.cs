@@ -7,7 +7,7 @@ short edad = 40;
 //Console.WriteLine("Hola mi nombre es {0} y tengo {1} años", nombre, edad);
 Console.WriteLine($"Hola mi nombre es {nombre} y tengo {edad} años");
 Console.WriteLine("Cual es tu nombre ?");
-string nombreUsuario = Console.ReadLine();
+string? nombreUsuario = Console.ReadLine();
 string nombreUsuarioSinEspacios = nombreUsuario.Trim();
 int cantidadLetras = nombreUsuarioSinEspacios.Replace(" ", "").Length;
 Console.WriteLine($"Te llamas {nombreUsuarioSinEspacios} y tu nombre tiene {cantidadLetras} caracteres");

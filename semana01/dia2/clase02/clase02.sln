@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clase02", "clase02.csproj", "{70AEE77B-90B6-48DF-820B-952A862DE02B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matematicas", "..\matematicas\matematicas.csproj", "{35DB8761-C38B-49D3-8C32-D52DBB992C36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bucles", "..\bucles\bucles.csproj", "{BDEC1CE6-185B-4A57-8A64-5D1A7A84283C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{70AEE77B-90B6-48DF-820B-952A862DE02B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70AEE77B-90B6-48DF-820B-952A862DE02B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70AEE77B-90B6-48DF-820B-952A862DE02B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35DB8761-C38B-49D3-8C32-D52DBB992C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35DB8761-C38B-49D3-8C32-D52DBB992C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35DB8761-C38B-49D3-8C32-D52DBB992C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35DB8761-C38B-49D3-8C32-D52DBB992C36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEC1CE6-185B-4A57-8A64-5D1A7A84283C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEC1CE6-185B-4A57-8A64-5D1A7A84283C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEC1CE6-185B-4A57-8A64-5D1A7A84283C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEC1CE6-185B-4A57-8A64-5D1A7A84283C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
