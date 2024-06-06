@@ -25,7 +25,14 @@ class Program
 
             var nombreMoneda = row.SelectSingleNode(".//td[@class='APLI_fila3']");
             var montoMonedas = row.SelectNodes(".//td[@class='APLI_fila2']");
-            Console.WriteLine(nombreMoneda.InnerHtml);
+            //Console.WriteLine(nombreMoneda.InnerHtml);
+            var moneda = nombreMoneda.InnerText.Trim();
+            var compra = montoMonedas[0].InnerText.Trim();
+            var venta = montoMonedas[1].InnerText.Trim();
+
+            Console.WriteLine($"Moneda : {moneda}");
+            Console.WriteLine($"Precio Compra: {compra}");
+            Console.WriteLine($"Precio Venta : {venta}");
         }
     }
 }
