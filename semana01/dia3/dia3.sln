@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dia3_funciones", "..\dia3_f
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dia3_procedimientos", "..\dia3_procedimientos\dia3_procedimientos.csproj", "{135E696E-E7AC-42D0-A1D1-1AA08DE3112D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScrappingSBS", "..\WebScrappingSBS\WebScrappingSBS.csproj", "{9168EDA5-D667-4038-B831-3C06FDEE6F7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{135E696E-E7AC-42D0-A1D1-1AA08DE3112D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{135E696E-E7AC-42D0-A1D1-1AA08DE3112D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{135E696E-E7AC-42D0-A1D1-1AA08DE3112D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9168EDA5-D667-4038-B831-3C06FDEE6F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9168EDA5-D667-4038-B831-3C06FDEE6F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9168EDA5-D667-4038-B831-3C06FDEE6F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9168EDA5-D667-4038-B831-3C06FDEE6F7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
