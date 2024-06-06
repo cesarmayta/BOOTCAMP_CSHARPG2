@@ -21,6 +21,7 @@ double CalcularAreaRectangulo(int baseRectangulo,int alturaRectangulo)
 {
     return baseRectangulo * alturaRectangulo;
 }
+
 Console.WriteLine("Ingrese base : ");
 int baseArea = int.Parse(Console.ReadLine());
 Console.WriteLine("Ingrese Altura : ");
