@@ -10,15 +10,22 @@ class Program
 
         var response = await client.GetStringAsync(url);
 
+        //Console.WriteLine(response);
+
         if (response != null)
         {
             var html = new HtmlDocument();
             html.LoadHtml(response);
 
             var table = html.DocumentNode.SelectSingleNode("//table[@id='ctl00_cphContent_rgTipoCambio_ctl00']");
-            Console.WriteLine(table.InnerHtml);
+            //Console.WriteLine(table.InnerHtml);
 
-            
+            var row = table.SelectSingleNode(".//tr[@id='ctl00_cphContent_rgTipoCambio_ctl00__0']");
+            //Console.WriteLine(row.InnerHtml);
+
+            var nombreMoneda = row.SelectSingleNode(".//td[@class='APLI_fila3']");
+            var montoMonedas = row.SelectNodes(".//td[@class='APLI_fila2']");
+            Console.WriteLine(nombreMoneda.InnerHtml);
         }
     }
 }
