@@ -1,6 +1,8 @@
 ﻿// VARIABLES
 double valorCompra = 3.741;
 double valorVenta = 3.747;
+double montoOrigen = 0;
+double montoDestino = 0;
 int opcion = 0;
 
 // PROCESO
@@ -24,13 +26,17 @@ while(opcion != 3)
             Console.Clear();
             Console.WriteLine("ELEGISTE CONVERTIR DE SOLES A DOLARES");
             Console.WriteLine("Ingrese Monto en Soles :");
-            double montoOrigen = double.Parse(Console.ReadLine());
-            double montoDestino = montoOrigen / valorVenta;
+            montoOrigen = double.Parse(Console.ReadLine());
+            montoDestino = montoOrigen / valorVenta;
             Console.WriteLine($"{montoOrigen} soles es igual a {Math.Round(montoDestino,2)} dolares");
             break;
         case 2:
             Console.Clear();
             Console.WriteLine("ELEGISTE CONVERTIR DE DOLARES A SOLES");
+            Console.WriteLine("Ingrese el Monto en Dolares : ");
+            montoOrigen = double.Parse(Console.ReadLine());
+            montoDestino = montoOrigen * valorCompra;
+            Console.WriteLine($"{montoOrigen} dolares es igual a {Math.Round(montoDestino,2)} soles");
             break;
         case 3:
             Console.Clear();
