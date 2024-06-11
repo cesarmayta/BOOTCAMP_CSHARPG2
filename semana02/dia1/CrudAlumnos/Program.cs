@@ -10,12 +10,17 @@ listaAlumnos.Add(alumnoMuestra);
 int opcion = 0;
 const int ANCHO = 50;
 
-while(opcion < 5)
+void MostrarTitulo(string titulo)
+{
+    Console.WriteLine(new string('=', ANCHO));
+    Console.WriteLine(new string(' ', 15) + titulo);
+    Console.WriteLine(new string('=', ANCHO));
+}
+
+while(opcion != 5)
 {
     Console.Clear();
-    Console.WriteLine(new string('=', ANCHO));
-    Console.WriteLine(new string(' ', 15) + "CRUD DE ALUMNOS");
-    Console.WriteLine(new string('=', ANCHO));
+    MostrarTitulo("CRUD DE ALUMNOS");
     Console.WriteLine(@"
             [1] REGISTRAR ALUMNO
             [2] MOSTRAR ALUMNOS
@@ -27,4 +32,33 @@ while(opcion < 5)
     Console.WriteLine("INGRESE UNA OPCIÓN DEL MENU: ");
     opcion = int.Parse(Console.ReadLine());
     Console.Clear();
+
+    switch (opcion)
+    {
+        case 1:
+            break;
+        case 2:
+            MostrarTitulo("[2] MOSTRAR ALUMNOS");
+            foreach(var alumno in listaAlumnos)
+            {
+               foreach(var dicAlumno in alumno)
+                {
+                    Console.WriteLine($"{dicAlumno.Key} : {dicAlumno.Value}");
+                }
+            }
+            MostrarTitulo("PRESIONE UNA TECLA PARA CONTINUAR ...");
+            Console.ReadLine();
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            MostrarTitulo("SALIENDO DEL SISTEMA");
+            break;
+        default:
+            MostrarTitulo("OPÇIÓN INVALIDA!!!");
+            System.Threading.Thread.Sleep(1000);
+            break;
+    }
 }
