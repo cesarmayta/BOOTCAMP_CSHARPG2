@@ -106,6 +106,21 @@ while(opcion != 5)
             }
             break;
         case 4:
+            MostrarTitulo("[2] ELIMINAR ALUMNO");
+            Console.WriteLine("INGRESE EL EMAIL DEL ALUMNO A ELIMINAR : ");
+            string emailEliminar = Console.ReadLine();
+            int posicionEliminar = listaAlumnos.FindIndex(a => a["email"] == emailEliminar);
+            if (posicionEliminar == -1)
+            {
+                Console.Clear();
+                MostrarTitulo("NO SE ENCONTRO EL ALUMNO ...");
+            }
+            else
+            {
+                listaAlumnos.RemoveAt(posicionEliminar);
+                MostrarTitulo("ALUMNO ELIMINADO !!!");
+                System.Threading.Thread.Sleep(1000);
+            }
             break;
         case 5:
             MostrarTitulo("SALIENDO DEL SISTEMA");
