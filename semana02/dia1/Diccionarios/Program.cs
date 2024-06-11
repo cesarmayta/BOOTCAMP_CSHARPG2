@@ -16,6 +16,13 @@ string pais = Console.ReadLine();
 if (capitales.ContainsKey(pais))
 {
     Console.WriteLine($"La capital de {pais} es {capitales[pais]}");
+    capitales.Remove(pais);
+    Console.WriteLine("Se eliminio la capital");
+    foreach (var item in capitales)
+    {
+        Console.WriteLine($"{item.Key} : {item.Value}");
+    }
+
 }
 else
 {
