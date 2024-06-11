@@ -31,6 +31,21 @@ double CalcularPromedioForEach(int[] notas)
     return sumaNotas / notas.Length;
 }
 
+void CalularMayor(int[] notas)
+{
+    int mayor = 0;
+    foreach (var nota in notas)
+    {
+        if (nota > mayor)
+        {
+            mayor = nota;
+        }
+    }
+    Console.WriteLine($"EL Número Mayor es :{mayor}");
+}
+
+//crear procedimiento que muestre el mayor y menor de los valores del array
+
 
 Console.WriteLine("INGRESE CANTIDAD DE NOTAS : ");
 cantidad = Convert.ToInt32(Console.ReadLine());
@@ -43,3 +58,4 @@ for (int i = 0; i < cantidad; i++)
 Console.WriteLine("se ingresaron todas las notas...");
 double promedio = CalcularPromedioForEach(notas);
 Console.WriteLine($"EL PROMEDIO DE LAS NOTAS ES : {promedio}");
+CalularMayor(notas);
