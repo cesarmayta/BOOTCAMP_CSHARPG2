@@ -36,11 +36,29 @@ while(opcion != 5)
     switch (opcion)
     {
         case 1:
+            MostrarTitulo("[1] REGISTRAR ALUMNO");
+            Console.WriteLine("NOMBRE : ");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("EMAIL : ");
+            string email = Console.ReadLine();
+            Console.WriteLine("CELULAR : ");
+            string celular = Console.ReadLine();
+            Dictionary<string, string> nuevoAlumno = new Dictionary<string, string>
+            {
+                {"nombre",nombre},
+                {"email",email},
+                {"celular",celular}
+            };
+            listaAlumnos.Add(nuevoAlumno);
+            Console.Clear();
+            MostrarTitulo("ALUMNO REGISTRADO CON EXITO...");
+            System.Threading.Thread.Sleep(1000);
             break;
         case 2:
             MostrarTitulo("[2] MOSTRAR ALUMNOS");
             foreach(var alumno in listaAlumnos)
             {
+               Console.WriteLine(new string('*', ANCHO));
                foreach(var dicAlumno in alumno)
                 {
                     Console.WriteLine($"{dicAlumno.Key} : {dicAlumno.Value}");
