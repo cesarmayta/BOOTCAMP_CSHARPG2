@@ -9,7 +9,7 @@ int cantidad = 0;
 double CalcularPromedioNotas(int[] notas)
 {
     int cantidad = notas.Length;
-    int sumaNotas = 0;
+    double sumaNotas = 0;
     double promedio = 0;
 
     for(int i = 0; i < cantidad; i++)
@@ -18,6 +18,17 @@ double CalcularPromedioNotas(int[] notas)
     }
     promedio = sumaNotas / cantidad;
     return promedio;
+}
+
+//uso de foreach
+double CalcularPromedioForEach(int[] notas)
+{
+    double sumaNotas = 0;
+    foreach(var nota in notas)
+    {
+        sumaNotas += nota;
+    }
+    return sumaNotas / notas.Length;
 }
 
 
@@ -30,5 +41,5 @@ for (int i = 0; i < cantidad; i++)
     notas[i] = Convert.ToInt32(Console.ReadLine());
 }
 Console.WriteLine("se ingresaron todas las notas...");
-double promedio = CalcularPromedioNotas(notas);
+double promedio = CalcularPromedioForEach(notas);
 Console.WriteLine($"EL PROMEDIO DE LAS NOTAS ES : {promedio}");
