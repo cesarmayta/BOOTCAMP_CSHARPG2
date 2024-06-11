@@ -68,6 +68,42 @@ while(opcion != 5)
             Console.ReadLine();
             break;
         case 3:
+            MostrarTitulo("[2] ACTUALIZAR ALUMNOS");
+            Console.WriteLine("INGRESE EL EMAIL DEL ALUMNO A ACTUALIZAR : ");
+            string emailBusqueda = Console.ReadLine();
+            int posicionActualizar = listaAlumnos.FindIndex(a => a["email"] == emailBusqueda);
+            if(posicionActualizar == -1)
+            {
+                Console.Clear();
+                MostrarTitulo("NO SE ENCONTRO EL ALUMNO ...");
+            }
+            else
+            {
+                Console.WriteLine($"ALUMNO A ACTUALIZAR : {listaAlumnos[posicionActualizar]["nombre"]}");
+                Console.WriteLine("INGRESE NUEVOS DATOS PARA EL ALUMNO");
+                Console.WriteLine("PRESIONE ENTER SI NO DESEA ACTUALIZAR EL DATO ...");
+                
+                Console.WriteLine($"NOMBRE ({listaAlumnos[posicionActualizar]["nombre"]}) : ");
+                string nombreActualizar = Console.ReadLine();
+                if (string.IsNullOrEmpty(nombreActualizar)) nombreActualizar = listaAlumnos[posicionActualizar]["nombre"];
+
+                Console.WriteLine($"EMAIL ({listaAlumnos[posicionActualizar]["email"]}) : ");
+                string emailActualizar = Console.ReadLine();
+                if (string.IsNullOrEmpty(emailActualizar)) emailActualizar = listaAlumnos[posicionActualizar]["email"];
+
+                Console.WriteLine($"CELULAR ({listaAlumnos[posicionActualizar]["celular"]}) : ");
+                string celularActualizar = Console.ReadLine();
+                if (string.IsNullOrEmpty(celularActualizar)) celularActualizar = listaAlumnos[posicionActualizar]["celular"];
+
+                listaAlumnos[posicionActualizar] = new Dictionary<string, string>
+                {
+                    {"nombre", nombreActualizar },
+                    {"email", emailActualizar},
+                    {"celular",celularActualizar }
+                };
+                MostrarTitulo("ALUMNO ACTUALIZADO CON EXITO");
+                System.Threading.Thread.Sleep(1000);
+            }
             break;
         case 4:
             break;
