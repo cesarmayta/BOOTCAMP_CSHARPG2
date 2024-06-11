@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listas", "..\Listas\Listas.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diccionarios", "..\Diccionarios\Diccionarios.csproj", "{5DACA7E7-8B44-4F2A-B009-F4A15FD112B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudAlumnos", "..\CrudAlumnos\CrudAlumnos.csproj", "{DAA3B480-55C4-4A8E-80FB-8433745642F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5DACA7E7-8B44-4F2A-B009-F4A15FD112B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DACA7E7-8B44-4F2A-B009-F4A15FD112B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DACA7E7-8B44-4F2A-B009-F4A15FD112B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA3B480-55C4-4A8E-80FB-8433745642F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA3B480-55C4-4A8E-80FB-8433745642F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA3B480-55C4-4A8E-80FB-8433745642F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA3B480-55C4-4A8E-80FB-8433745642F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
