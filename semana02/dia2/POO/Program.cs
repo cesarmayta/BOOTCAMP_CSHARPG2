@@ -2,8 +2,8 @@
 class Automovil
 {
     //atributos
-    public string placa;
-    public string color;
+    private string placa;
+    private string color;
     public string marca;
     public string modelo;
 
@@ -14,6 +14,25 @@ class Automovil
         this.color = co;
         this.marca = ma;
         this.modelo = mo;
+    }
+
+    public void Mostrar()
+    {
+        Console.WriteLine($"MARCA : {this.marca}");
+        Console.WriteLine($"PLACA : {this.placa}");
+        Console.WriteLine($"COLOR : {this.color}");
+        Console.WriteLine($"MODELO : {this.modelo}");
+
+    }
+
+    public void SetColor(string color)
+    {
+        this.color=color;
+    }
+
+    public string GetColor()
+    {
+        return this.color;
     }
 
     public void Encender()
@@ -27,13 +46,17 @@ class Program
     static void Main()
     {
         Automovil vw = new Automovil("CH-1234", "Amarillo", "Volkswagen", "Escarabajo");
-        vw.Encender();
+        //Console.WriteLine($"placa {vw.placa}");
+        vw.marca = "Daewo";
+        vw.SetColor("Rojo");
+        Console.WriteLine($"El nuevo color del auto es {vw.GetColor()}");
+        //vw.Encender();
 
-        Console.WriteLine("crea tu propio auto : ");
-        Console.WriteLine("Marca : ");
-        string marca = Console.ReadLine();
+        //Console.WriteLine("crea tu propio auto : ");
+        //Console.WriteLine("Marca : ");
+        //string marca = Console.ReadLine();
 
-        Automovil autoPropio = new Automovil("ASDF", "Rojo", marca, "NINGUNO");
-        autoPropio.Encender();
+        //Automovil autoPropio = new Automovil("ASDF", "Rojo", marca, "NINGUNO");
+        //autoPropio.Encender();
     }
 }
