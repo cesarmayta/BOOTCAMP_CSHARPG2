@@ -7,6 +7,9 @@ class Automovil
     public string marca;
     public string modelo;
 
+    public string Placa { get => placa; set => placa = value; }
+
+
     //Constructor
     public Automovil(string pl,string co,string ma,string mo)
     {
@@ -48,7 +51,9 @@ class Program
         Automovil vw = new Automovil("CH-1234", "Amarillo", "Volkswagen", "Escarabajo");
         //Console.WriteLine($"placa {vw.placa}");
         vw.marca = "Daewo";
+        vw.Placa = "RH 23423";
         vw.SetColor("Rojo");
+        Console.WriteLine($"PLACA : {vw.Placa}");
         Console.WriteLine($"El nuevo color del auto es {vw.GetColor()}");
         //vw.Encender();
 
