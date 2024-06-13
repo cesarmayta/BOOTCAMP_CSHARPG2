@@ -34,6 +34,19 @@
                 switch (opcion)
                 {
                     case 1:
+                        Console.WriteLine("[1] REGISTRAR ALUMNO");
+                        Console.WriteLine("NOMBRE : ");
+                        string nombre = Console.ReadLine();
+                        Console.WriteLine("EMAIL : ");
+                        string email = Console.ReadLine();
+                        Console.WriteLine("CELULAR : ");
+                        string celular = Console.ReadLine();
+
+                        Alumno nuevoAlumno = new Alumno(nombre, email, celular);
+                        listaAlumnos.Add(nuevoAlumno);
+                        Console.Clear();
+                        Console.WriteLine("ALUMNO REGISTRADO CON EXITO ...");
+                        System.Threading.Thread.Sleep(1000);
                         break;
                     case 2:
                         foreach(var alumno in listaAlumnos)
