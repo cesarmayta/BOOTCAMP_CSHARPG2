@@ -21,6 +21,10 @@ namespace CrudAlumnosPOO
             this.celular = cel;
         }
 
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Email { get => email; set => email = value; }
+        public string Celular { get => celular; set => celular = value; }
+
         public void Mostrar()
         {
             Console.WriteLine($"Nombre : {this.nombre}");

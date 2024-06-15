@@ -41,5 +41,31 @@ namespace CrudAlumnosPOO
             Alumno nuevoAlumno = new Alumno(nombre,email, celular);
             listaAlumnos.Add(nuevoAlumno);
         }
+
+        public void ActualizarAlumno()
+        {
+            Console.WriteLine("[3] ACTUALIZAR ALUMNO");
+            Console.WriteLine("INGRESE EL EMAIL DEL ALUMNO A ACTUALIZAR: ");
+            string email = Console.ReadLine();
+
+            Alumno alumno = listaAlumnos.Find(a => a.Email.Equals(email,StringComparison.OrdinalIgnoreCase));
+            if(alumno != null)
+            {
+                Console.WriteLine("NUEVO NOMBRE : ");
+                string nuevoNombre = Console.ReadLine();
+                Console.WriteLine("NUEVO EMAIL : ");
+                string nuevoEmail = Console.ReadLine();
+                Console.WriteLine("NUEVO CELULAR : ");
+                string nuevoCelular = Console.ReadLine();
+
+                alumno.Nombre = nuevoNombre;
+                alumno.Email = nuevoEmail;
+                alumno.Celular = nuevoCelular;
+            }
+            else
+            {
+                Console.WriteLine("ALUMNO NO ENCONTRADO...");
+            }
+        }
     }
 }
