@@ -10,6 +10,7 @@ namespace CrudAlumnosPOO
     internal class AlumnoCRUD
     {
         private List<Alumno> listaAlumnos = new List<Alumno>();
+        private MensajeUI mensaje = new MensajeUI(50);
 
         public AlumnoCRUD()
         {
@@ -19,8 +20,7 @@ namespace CrudAlumnosPOO
 
         public void MostrarAlumnos()
         {
-            Console.WriteLine(new string('*', 50));
-            Console.WriteLine(new string(' ', 20) + "LISTADO DE ALUMNOS");
+            this.mensaje.mostrarTitulo("RELACIÓN DE ALUMNOS");
             foreach (var alumno in listaAlumnos)
             {
                 Console.WriteLine(new string('*', 50));
@@ -30,7 +30,7 @@ namespace CrudAlumnosPOO
 
         public void RegistrarAlumno()
         {
-            Console.WriteLine("REGISTRAR ALUMNO");
+            this.mensaje.mostrarTitulo("REGISTRO DE NUEVO ALUMNO");
             Console.WriteLine("NOMBRE : ");
             string nombre = Console.ReadLine();
             Console.WriteLine("EMAIL : ");
@@ -40,6 +40,7 @@ namespace CrudAlumnosPOO
 
             Alumno nuevoAlumno = new Alumno(nombre,email, celular);
             listaAlumnos.Add(nuevoAlumno);
+            this.mensaje.mostrarMensaje("ALUMNO REGISTRADO CON EXITO!!!");
         }
 
         private Alumno buscarAlumno(string opcion)
@@ -67,10 +68,12 @@ namespace CrudAlumnosPOO
                 alumno.Nombre = nuevoNombre;
                 alumno.Email = nuevoEmail;
                 alumno.Celular = nuevoCelular;
+
+                this.mensaje.mostrarMensaje("ALUMNO ACTUALIZADO CON EXITO!!!");
             }
             else
             {
-                Console.WriteLine("ALUMNO NO ENCONTRADO...");
+                this.mensaje.mostrarMensaje("ALUMNO NO ENCONTRADO...");
             }
         }
 
@@ -80,10 +83,11 @@ namespace CrudAlumnosPOO
             if (alumno != null)
             {
                 listaAlumnos.Remove(alumno);
+                this.mensaje.mostrarMensaje("ALUMNO ELIMINADO CON EXITO!!!");
             }
             else
             {
-                Console.WriteLine("ALUMNO NO ENCONTRADO ...");
+                this.mensaje.mostrarMensaje("NO SE ENCONTRO EL ALUMNO...");
             }
         }
     }
