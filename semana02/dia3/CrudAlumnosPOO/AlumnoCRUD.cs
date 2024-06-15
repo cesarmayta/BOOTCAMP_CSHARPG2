@@ -28,5 +28,18 @@ namespace CrudAlumnosPOO
             }
         }
 
+        public void RegistrarAlumno()
+        {
+            Console.WriteLine("[1] REGISTRAR ALUMNO");
+            Console.WriteLine("NOMBRE : ");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("EMAIL : ");
+            string email = Console.ReadLine();
+            Console.WriteLine("CELULAR : ");
+            string celular = Console.ReadLine();
+
+            Alumno nuevoAlumno = new Alumno(nombre,email, celular);
+            listaAlumnos.Add(nuevoAlumno);
+        }
     }
 }
