@@ -10,7 +10,7 @@ namespace CrudAlumnosPOO
     {
         const int ANCHO = 50;
         private AlumnoCRUD crud;
-        private MensajeUI mensajeUI = new MensajeUI(100);
+        private MensajeUI mensajeUI = new MensajeUI(50);
 
         public AlumnoUI()
         {
@@ -54,6 +54,7 @@ namespace CrudAlumnosPOO
                         break;
                     case 5:
                         Console.WriteLine("SALIENDO DEL SISTEMA ... ");
+                        crud.GuardarAlumnos();
                         break;
                     default:
                         this.mensajeUI.mostrarMensaje("OPCIÓN INVALIDA!!!");

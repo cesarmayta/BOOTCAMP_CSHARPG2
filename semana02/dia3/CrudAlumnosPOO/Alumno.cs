@@ -31,5 +31,20 @@ namespace CrudAlumnosPOO
             Console.WriteLine($"Email : {this.email}");
             Console.WriteLine($"Celular : {this.celular}");
         }
+
+        public string ToCsv()
+        {
+            return $"{this.nombre},{this.email},{this.celular}";
+        }
+
+        public static Alumno FromCsv(string csvLine)
+        {
+            string[] values = csvLine.Split(',');
+            if(values.Length != 3)
+            {
+                throw new ArgumentException("El formato csv no es valido");
+            }
+            return new Alumno(values[0], values[1], values[2]);
+        }
     }
 }

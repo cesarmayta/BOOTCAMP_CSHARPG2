@@ -11,11 +11,13 @@ namespace CrudAlumnosPOO
     {
         private List<Alumno> listaAlumnos = new List<Alumno>();
         private MensajeUI mensaje = new MensajeUI(50);
+        private const string FilePath = "alumnos.csv";
 
         public AlumnoCRUD()
         {
-            Alumno alumnoMuestra = new Alumno("César Mayta", "cesar@gmail.com", "82372323");
-            listaAlumnos.Add(alumnoMuestra);
+            //Alumno alumnoMuestra = new Alumno("César Mayta", "cesar@gmail.com", "82372323");
+            //listaAlumnos.Add(alumnoMuestra);
+            this.CargarAlumnos();
         }
 
         public void MostrarAlumnos()
@@ -88,6 +90,32 @@ namespace CrudAlumnosPOO
             else
             {
                 this.mensaje.mostrarMensaje("NO SE ENCONTRO EL ALUMNO...");
+            }
+        }
+
+        public void CargarAlumnos()
+        {
+            if (File.Exists(FilePath))
+            {
+                using (StreamReader sr = new StreamReader(FilePath))
+                {
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        listaAlumnos.Add(Alumno.FromCsv(line));
+                    }
+                }
+            }
+        }
+
+        public void GuardarAlumnos()
+        {
+            using(StreamWriter sr = new StreamWriter(FilePath))
+            {
+                foreach(var alumno in listaAlumnos)
+                {
+                    sr.WriteLine(alumno.ToCsv());
+                }
             }
         }
     }
