@@ -6,3 +6,5 @@ crud.RegistrarAlumno();
 crud.MostrarAlumnos();
 crud.ActualizarAlumno();
 crud.MostrarAlumnos();
+crud.EliminarAlumno();
+crud.MostrarAlumnos();

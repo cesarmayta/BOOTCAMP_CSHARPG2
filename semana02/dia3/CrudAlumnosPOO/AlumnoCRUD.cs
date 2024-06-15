@@ -30,7 +30,7 @@ namespace CrudAlumnosPOO
 
         public void RegistrarAlumno()
         {
-            Console.WriteLine("[1] REGISTRAR ALUMNO");
+            Console.WriteLine("REGISTRAR ALUMNO");
             Console.WriteLine("NOMBRE : ");
             string nombre = Console.ReadLine();
             Console.WriteLine("EMAIL : ");
@@ -42,13 +42,19 @@ namespace CrudAlumnosPOO
             listaAlumnos.Add(nuevoAlumno);
         }
 
-        public void ActualizarAlumno()
+        private Alumno buscarAlumno(string opcion)
         {
-            Console.WriteLine("[3] ACTUALIZAR ALUMNO");
-            Console.WriteLine("INGRESE EL EMAIL DEL ALUMNO A ACTUALIZAR: ");
+            Console.WriteLine($" {opcion} ALUMNO");
+            Console.WriteLine($"INGRESE EL EMAIL DEL ALUMNO A {opcion}: ");
             string email = Console.ReadLine();
 
-            Alumno alumno = listaAlumnos.Find(a => a.Email.Equals(email,StringComparison.OrdinalIgnoreCase));
+            Alumno alumno = listaAlumnos.Find(a => a.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
+            return alumno;
+        }
+
+        public void ActualizarAlumno()
+        {
+            Alumno alumno = this.buscarAlumno("ACTUALIZAR");
             if(alumno != null)
             {
                 Console.WriteLine("NUEVO NOMBRE : ");
@@ -65,6 +71,19 @@ namespace CrudAlumnosPOO
             else
             {
                 Console.WriteLine("ALUMNO NO ENCONTRADO...");
+            }
+        }
+
+        public void EliminarAlumno()
+        {
+            Alumno alumno = this.buscarAlumno("ELIMINAR");
+            if (alumno != null)
+            {
+                listaAlumnos.Remove(alumno);
+            }
+            else
+            {
+                Console.WriteLine("ALUMNO NO ENCONTRADO ...");
             }
         }
     }
