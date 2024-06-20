@@ -32,7 +32,12 @@ namespace Matriculas.DAO
         }
         public override void Read()
         {
-
+            base.mensaje.mostrarTitulo("RELACIÓN DE PROFESORES");
+            foreach(var profesor in listaProfesor)
+            {
+                Console.WriteLine(new string('*', 50));
+                profesor.Mostrar();
+            }
         }
         public override void Update()
         {

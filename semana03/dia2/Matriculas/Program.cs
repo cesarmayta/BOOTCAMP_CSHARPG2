@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Matriculas.UI;
+class Program
+{
+    static void Main()
+    {
+        MainUI principalUI = new MainUI();
+        principalUI.MostrarMenu();
+    }
+}
