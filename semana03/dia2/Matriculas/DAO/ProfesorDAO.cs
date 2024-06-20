@@ -12,6 +12,15 @@ namespace Matriculas.DAO
     {
         private List<Profesor> listaProfesor = new List<Profesor>();
 
+        private Profesor FindValue()
+        {
+            Console.WriteLine($"INGRESE EL EMAIL DEL PROFESOR : ");
+            string email = Console.ReadLine();
+
+            Profesor profesor = listaProfesor.Find(a => a.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
+            return profesor;
+        }
+
         public override void Create()
         {
             base.mensaje.mostrarTitulo("REGISTRO DE NUEVO PROFESOR");
@@ -41,10 +50,42 @@ namespace Matriculas.DAO
         }
         public override void Update()
         {
+            base.mensaje.mostrarTitulo("ACTUALIZAR PROFESOR");
+            Profesor profesor = this.FindValue();
+            if (profesor != null) {
+                Console.WriteLine("NUEVO NOMBRE : ");
+                string nuevoNombre = Console.ReadLine();
+                Console.WriteLine("NUEVO EMAIL : ");
+                string nuevoEmail = Console.ReadLine();
+                Console.WriteLine("NUEVA ESPECIALIDAD : ");
+                string nuevaEspecialidad = Console.ReadLine();
+
+                profesor.Nombre = nuevoNombre;
+                profesor.Email = nuevoEmail;
+                profesor.Especialidad = nuevaEspecialidad;
+
+                this.mensaje.mostrarMensaje("PROFESOR ACTUALIZADO CON EXITO !!!");
+
+            }
+            else
+            {
+                this.mensaje.mostrarMensaje("PROFESOR NO ENCONTRADO ....");
+            }
 
         }
         public override void Delete()
         {
+            base.mensaje.mostrarTitulo("ELIMINAR PROFESOR");
+            Profesor profesor = this.FindValue();
+            if (profesor != null)
+            {
+                listaProfesor.Remove(profesor);
+                this.mensaje.mostrarMensaje("PROFESOR ELIMINADO CON EXITO !!!");
+            }
+            else
+            {
+                this.mensaje.mostrarMensaje("PROFESOR NO ENCONTRADO ....");
+            }
 
         }
 

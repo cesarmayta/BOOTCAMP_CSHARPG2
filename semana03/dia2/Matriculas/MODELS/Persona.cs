@@ -12,12 +12,17 @@ namespace Matriculas.MODELS
         private string nombre;
         private string email;
 
+        
+
         public Persona(int id, string nombre, string email)
         {
             this.id = id;
             this.nombre = nombre;
             this.email = email;
         }
+
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Email { get => email; set => email = value; }
 
         public virtual void Mostrar()
         {

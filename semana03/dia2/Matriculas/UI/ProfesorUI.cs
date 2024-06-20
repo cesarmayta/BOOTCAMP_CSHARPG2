@@ -45,10 +45,10 @@ namespace Matriculas.UI
                         Console.ReadKey();
                         break;
                     case 3:
-
+                        dao.Update();
                         break;
                     case 4:
-
+                        dao.Delete();
                         break;
                     case 5:
                         Console.WriteLine("SALIENDO DEL SISTEMA ... ");
