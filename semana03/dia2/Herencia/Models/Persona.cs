@@ -8,19 +8,20 @@ namespace Herencia.Models
 {
     internal class Persona
     {
-        public string Nombre { get; set; }
-        public string Email {  get; set; }
+        private string nombre { get; set; }
+        private string email {  get; set; }
 
-        public Persona()
+        public Persona(string nombre,string email)
         {
-
+            this.nombre = nombre;
+            this.email = email;
         }
 
         public virtual void Mostrar()
         {
             Console.WriteLine(new string('=', 50));
-            Console.WriteLine($"NOMBRE : {Nombre}");
-            Console.WriteLine($"EMAIL : {Email}");
+            Console.WriteLine($"NOMBRE : {this.nombre}");
+            Console.WriteLine($"EMAIL : {this.email}");
         }
     }
 }
