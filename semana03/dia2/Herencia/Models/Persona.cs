@@ -16,7 +16,7 @@ namespace Herencia.Models
 
         }
 
-        public void Mostrar()
+        public virtual void Mostrar()
         {
             Console.WriteLine(new string('=', 50));
             Console.WriteLine($"NOMBRE : {Nombre}");
