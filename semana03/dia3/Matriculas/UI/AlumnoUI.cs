@@ -37,7 +37,8 @@ namespace Matriculas.UI
                         break;
                     case 2:
                         dao.Read();
-                        this.mensaje.mostrarMensaje("PRESIONE UNA TECLA PARA CONTINUAR...");
+                        Console.WriteLine("PRESIONE UNA TECLA PARA CONTINUAR...");
+                        Console.ReadKey();
                         break;
                     case 3:
                         break;
