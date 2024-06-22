@@ -23,7 +23,7 @@ namespace Matriculas.DAO
             Console.WriteLine("NOTA : ");
             int nota = int.Parse(Console.ReadLine());
 
-            Alumno nuevoAlumno = new Alumno(id, nombre, email, nota)
+            Alumno nuevoAlumno = new Alumno(id, nombre, email, nota);
             listaAlumnos.Add(nuevoAlumno);
             this.mensaje.mostrarMensaje("REGISTRO EXITOSO");
         }

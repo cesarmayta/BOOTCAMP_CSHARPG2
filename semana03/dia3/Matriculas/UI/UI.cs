@@ -12,6 +12,6 @@ namespace Matriculas.UI
         const int ANCHO = 50;
         protected Mensaje mensaje = new Mensaje(ANCHO);
 
-        public abstract void MostrarManu();
+        public abstract void MostrarMenu();
     }
 }
