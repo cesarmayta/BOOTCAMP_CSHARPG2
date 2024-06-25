@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Matriculas.MODELS
 {
-    internal class Alumno
+    internal class Alumno : Persona
     {
+        public Alumno(int id, string nombre, string email) : base(id, nombre, email) { 
+        
+        }
     }
 }

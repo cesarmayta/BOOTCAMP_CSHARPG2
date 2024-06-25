@@ -1,4 +1,5 @@
-﻿using Matriculas.UTILS;
+﻿
+using Matriculas.MODELS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,12 @@ using System.Threading.Tasks;
 
 namespace Matriculas.DAO
 {
-    internal class AlumnoDAO
+    internal class AlumnoDAO : DAO<Alumno>
     {
-        Mensaje mensaje = new Mensaje(50);
+        public Alumno FindValue(string valorBusqueda)
+        {
+            Alumno item = this.items.Find(a => a.Email.Equals(valorBusqueda, StringComparison.OrdinalIgnoreCase));
+            return item;
+        }
     }
 }

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Matriculas.INTEFACES
 {
-    internal interface ICrud
+    internal interface ICrud<T>
     {
-        public  void Create();
+        public  void Create(T item);
         public  void Read();
-        public  void Update();
-        public  void Delete();
+        public  void Update(T item);
+        public  void Delete(T item);
     }
 }

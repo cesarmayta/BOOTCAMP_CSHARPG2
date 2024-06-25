@@ -30,5 +30,10 @@ namespace Matriculas.MODELS
             Console.WriteLine($"NOMBRE : {this.nombre}");
             Console.WriteLine($"EMAIL : {this.email}");
         }
+
+        public override string ToString()
+        {
+            return $"NOMBRE : {Nombre},EMAIL : {Email}";
+        }
     }
 }

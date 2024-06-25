@@ -22,5 +22,10 @@ namespace Matriculas.MODELS
             base.Mostrar();
             Console.WriteLine($"ESPECIALIDAD : {this.especialidad}");
         }
+
+        public override string ToString()
+        {
+            return $"NOMBRE : {Nombre},EMAIL : {Email},ESPECIALIDAD {this.especialidad}";
+        }
     }
 }
